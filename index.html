@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">x   
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="content">
+    <h1>Password Generator</h1>
+    <h3> Generate a strong password with the following options:</h3>
+    <div class ="inputs-main">
+        <div class ="input">
+          <input type="checkbox" id="SA">
+            <p>Small Alphabets</p>
+        </div>
+        <div class ="input">
+            <input type="checkbox" id="CA">
+              <p>Capital Alphabets</p>
+          </div>
+          <div class ="input">
+            <input type="checkbox" id="No">
+              <p> Numbers</p>
+          </div>
+          <div class ="input">
+            <input type="checkbox" id="SC">
+              <p>Special Characters</p>
+          </div>
+          <div class ="input">
+            <input type="number" id="Len" min="4" max="15">
+              <p>Length </p>
+          </div>
+          <div class="submit"></div>
+            
+          <button id="submit-btn" onclick="getValue()"> Generate Password </button>
+
+     </div>
+    </div>
+    <div class="results-main">
+        <div class="password-main">
+            <h3 id="password">Password:Patil@1234</h3> 
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
